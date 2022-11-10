@@ -4,9 +4,10 @@ import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 import pprint
 import time
+import os
 
-CLIENT_ID = "c0f9bd9bdee44e57abedc1cf2198312b"
-CLIENT_SECRET = "4f0b9a946d8b4511bd9ee34f9285588d"
+CLIENT_ID = os.environ.get("CLIENT_ID")
+CLIENT_SECRET = os.environ.get("CLIENT_SECRET")
 REDIRECT_URL = "https://localhost:8888/callback"
 # -------------------------- WEB SCRAPING -----------------------------------------#
 
